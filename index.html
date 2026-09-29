@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMIF - Himpunan Mahasiswa Informatika</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">HMIF</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav aria-label="Navigasi utama">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about" class="nav-link">Tentang</a></li>
+                    <li><a href="#programs" class="nav-link">Program</a></li>
+                    <li><a href="#divisi" class="nav-link">Divisi</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-label="Header utama">
+        <canvas id="particleCanvas"></canvas>
+        <header class="hero-content">
+            <h1 class="typing-wrapper">Himpunan Mahasiswa <span class="accent">Informatika</span></h1>
+            <p class="hero-subtitle">Berkarya, Berkolaborasi, dan Berkontribusi untuk masa depan teknologi Indonesia yang lebih baik.</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Kenali Kami</a>
+                <a href="#contact" class="btn btn-outline">Hubungi Kami</a>
+            </div>
+        </header>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2 class="section-title reveal">Tentang <span>Kami</span></h2>
+        <p class="reveal">HMIF (Himpunan Mahasiswa Informatika) adalah organisasi kemahasiswaan yang menaungi seluruh mahasiswa Program Studi Informatika. Kami hadir sebagai wadah aspirasi, pengembangan diri, dan kegiatan akademik maupun non-akademik bagi para mahasiswa.</p>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="Statistik organisasi">
+        <div class="stat-item reveal">
+            <h2 class="counter" data-target="500">0</h2>
+            <span class="plus">+</span>
+            <p>Anggota Aktif</p>
+        </div>
+        <div class="stat-item reveal">
+            <h2 class="counter" data-target="50">0</h2>
+            <span class="plus">+</span>
+            <p>Program Kerja</p>
+        </div>
+        <div class="stat-item reveal">
+            <h2 class="counter" data-target="10">0</h2>
+            <span class="plus">+</span>
+            <p>Tahun Berdiri</p>
+        </div>
+        <div class="stat-item reveal">
+            <h2 class="counter" data-target="20">0</h2>
+            <span class="plus">+</span>
+            <p>Penghargaan</p>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="vm">
+        <div class="vm-card reveal">
+            <div class="vm-icon"><i class="fas fa-eye"></i></div>
+            <h3>Visi</h3>
+            <p>Menjadi organisasi kemahasiswaan yang unggul, inovatif, dan berkontribusi aktif dalam pengembangan ilmu pengetahuan dan teknologi informasi demi kemajuan bangsa.</p>
+        </div>
+        <div class="vm-card reveal">
+            <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+            <h3>Misi</h3>
+            <ul class="misi-list">
+                <li>Menjadikan HMIF sebagai wadah pengembangan potensi mahasiswa Informatika.</li>
+                <li>Meningkatkan kualitas SDM di bidang teknologi informasi.</li>
+                <li>Menjalin kerja sama dengan berbagai pihak demi kemajuan organisasi.</li>
+                <li>Melaksanakan kegiatan yang bermanfaat bagi masyarakat.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="programs" id="programs">
+        <h2 class="section-title reveal">Program <span>Unggulan</span></h2>
+        <div class="programs-grid">
+            <article class="program-card reveal">
+                <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Bootcamp Programming</h3>
+                <p>Program intensif pelatihan pemrograman untuk meningkatkan kemampuan teknis mahasiswa.</p>
+                <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="program-card reveal">
+                <div class="card-icon"><i class="fas fa-trophy"></i></div>
+                <h3>IF Competition</h3>
+                <p>Kompetisi tingkat nasional di bidang teknologi informasi dan pemrograman.</p>
+                <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="program-card reveal">
+                <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <h3>Kuliah Umum & Seminar</h3>
+                <p>Seri seminar dengan narasumber dari industri dan akademisi ternama.</p>
+                <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="program-card reveal">
+                <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
+                <h3>Bakti Sosial</h3>
+                <p>Kegiatan pengabdian masyarakat melalui pemanfaatan teknologi informasi.</p>
+                <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="program-card reveal">
+                <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                <h3>IF Fun Games</h3>
+                <p>Turnamen e-sport dan gathering untuk mempererat kekeluargaan antar anggota.</p>
+                <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="program-card reveal">
+                <div class="card-icon"><i class="fas fa-palette"></i></div>
+                <h3>Workshop & Training</h3>
+                <p>Workshop desain UI/UX, data science, dan skill teknologi lainnya.</p>
+                <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Divisi -->
+    <section class="divisi" id="divisi">
+        <h2 class="section-title reveal">Divisi <span>Kami</span></h2>
+        <div class="divisi-grid">
+            <article class="divisi-item reveal">
+                <div class="divisi-icon"><i class="fas fa-tasks"></i></div>
+                <h4>BiPro</h4>
+                <p>Bidang Program Kerja</p>
+            </article>
+            <article class="divisi-item reveal">
+                <div class="divisi-icon"><i class="fas fa-heart"></i></div>
+                <h4>Kesma</h4>
+                <p>Kesejahteraan Mahasiswa</p>
+            </article>
+            <article class="divisi-item reveal">
+                <div class="divisi-icon"><i class="fas fa-users-cog"></i></div>
+                <h4>PSDM</h4>
+                <p>Pengembangan Sumber Daya Manusia</p>
+            </article>
+            <article class="divisi-item reveal">
+                <div class="divisi-icon"><i class="fas fa-sitemap"></i></div>
+                <h4>Internal</h4>
+                <p>Keinternalan Organisasi</p>
+            </article>
+            <article class="divisi-item reveal">
+                <div class="divisi-icon"><i class="fas fa-handshake"></i></div>
+                <h4>Eksternal</h4>
+                <p>Hubungan & Kerja Sama Luar</p>
+            </article>
+            <article class="divisi-item reveal">
+                <div class="divisi-icon"><i class="fas fa-bullhorn"></i></div>
+                <h4>Kominfo</h4>
+                <p>Komunikasi & Informasi</p>
+            </article>
+            <article class="divisi-item reveal">
+                <div class="divisi-icon"><i class="fas fa-star"></i></div>
+                <h4>Minat & Bakat</h4>
+                <p>Pengembangan Minat Bakat</p>
+            </article>
+            <article class="divisi-item reveal">
+                <div class="divisi-icon"><i class="fas fa-wallet"></i></div>
+                <h4>Bendahara</h4>
+                <p>Keuangan & Administrasi</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" aria-label="Testimoni anggota">
+        <h2 class="section-title reveal">Apa Kata <span>Mereka?</span></h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-track" id="testimonialTrack">
+                <article class="testimonial-card">
+                    <figure class="testimonial-avatar"><i class="fas fa-user"></i></figure>
+                    <blockquote>"HMIF memberikan saya kesempatan untuk belajar banyak hal baru dan membangun jaringan pertemanan yang luas."</blockquote>
+                    <figcaption>Anisa Putri <span>Angkatan 2023</span></figcaption>
+                </article>
+                <article class="testimonial-card">
+                    <figure class="testimonial-avatar"><i class="fas fa-user"></i></figure>
+                    <blockquote>"Program bootcamp di HMIF sangat membantu saya dalam mengembangkan skill programming dari nol sampai mahir."</blockquote>
+                    <figcaption>Rizky Pratama <span>Angkatan 2022</span></figcaption>
+                </article>
+                <article class="testimonial-card">
+                    <figure class="testimonial-avatar"><i class="fas fa-user"></i></figure>
+                    <blockquote>"Bergabung di divisi Kominfo mengajarkan saya banyak tentang desain grafis dan manajemen media sosial."</blockquote>
+                    <figcaption>Dewi Sari <span>Angkatan 2023</span></figcaption>
+                </article>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-btn" id="prevBtn" aria-label="Testimoni sebelumnya"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots" id="testimonialDots"></div>
+                <button class="testimonial-btn" id="nextBtn" aria-label="Testimoni berikutnya"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <h2 class="section-title reveal">Pertanyaan <span>Umum</span></h2>
+        <div class="faq-list">
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    <span>Bagaimana cara bergabung dengan HMIF?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Pendaftaran anggota baru HMIF dibuka setiap awal semester ganjil. Calon anggota dapat mendaftar melalui form online yang akan diumumkan di Instagram resmi kami @hmif_university.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    <span>Apakah HMIF terbuka untuk semua angkatan?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Ya, HMIF terbuka untuk seluruh mahasiswa Program Studi Informatika dari berbagai angkatan, baik semester 1 maupun yang sudah lanjut.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    <span>Program unggulan apa saja yang ada di HMIF?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>HMIF memiliki berbagai program unggulan seperti Bootcamp Programming, IF Competition, Workshop & Training, Kuliah Umum, hingga Bakti Sosial dan Fun Games.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    <span>Bagaimana cara menghubungi HMIF?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Anda dapat menghubungi kami melalui email hmif@university.ac.id, WhatsApp +62 812-3456-7890, atau datang langsung ke Gedung Informatika Lt. 2.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question">
+                    <span>Apakah ada biaya untuk menjadi anggota?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Terdapat iuran bulanan yang sangat terjangkau untuk mendukung operasional kegiatan organisasi. Informasi lengkap dapat ditanyakan saat masa pendaftaran.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="section-title reveal">Hubungi <span>Kami</span></h2>
+        <div class="contact-container">
+            <address class="contact-info reveal">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>hmif@university.ac.id</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <h4>WhatsApp</h4>
+                    <p>+62 812-3456-7890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Alamat</h4>
+                    <p>Gedung Informatika, Lt. 2</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <h4>Instagram</h4>
+                    <p>@hmif_university</p>
+                </div>
+            </address>
+            <aside class="contact-form reveal">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Pesan Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </aside>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-logo">HMIF</h3>
+                <p>Himpunan Mahasiswa Informatika - Wadah berkarya, berkolaborasi, dan berkontribusi.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Link Cepat</h4>
+                <ul>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#programs">Program</a></li>
+                    <li><a href="#divisi">Divisi</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Ikuti Kami</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HMIF - Himpunan Mahasiswa Informatika. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <i class="fas fa-check-circle"></i>
+        <span>Pesan berhasil dikirim!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
